@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/harolpg17/godesde0/ejercicios"
 	"github.com/harolpg17/godesde0/variables"
 )
 
@@ -24,6 +25,7 @@ func main() {
 	} else {
 		fmt.Println("Esto no es Linux, es ", os)
 	}
+	fmt.Println("-----------------------------")
 
 	switch os := runtime.GOOS; os {
 	case "linux":
@@ -33,4 +35,11 @@ func main() {
 	default:
 		fmt.Printf("%s 	\n", os)
 	}
+
+	fmt.Println("-----------------------------")
+
+	numero, mensaje := ejercicios.ConvertirTextoaEntero("60")
+	fmt.Println(numero)
+	fmt.Println(mensaje)
+	fmt.Println("-----------------------------")
 }
