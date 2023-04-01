@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/harolpg17/godesde0/ejercicios"
+	"github.com/harolpg17/godesde0/teclado"
 	"github.com/harolpg17/godesde0/variables"
 )
 
@@ -41,5 +42,8 @@ func main() {
 	numero, mensaje := ejercicios.ConvertirTextoaEntero("60")
 	fmt.Println(numero)
 	fmt.Println(mensaje)
+	fmt.Println("-----------------------------")
+
+	teclado.IngresoNumeros()
 	fmt.Println("-----------------------------")
 }
