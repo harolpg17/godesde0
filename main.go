@@ -49,4 +49,6 @@ func main() {
 
 	iteraciones.Iterar()
 	fmt.Println("-----------------------------")
+
+	ejercicios.TablaDeMultiplicar()
 }
