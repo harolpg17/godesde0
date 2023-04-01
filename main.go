@@ -5,7 +5,7 @@ import (
 	"runtime"
 
 	"github.com/harolpg17/godesde0/ejercicios"
-	"github.com/harolpg17/godesde0/teclado"
+	"github.com/harolpg17/godesde0/iteraciones"
 	"github.com/harolpg17/godesde0/variables"
 )
 
@@ -44,6 +44,9 @@ func main() {
 	fmt.Println(mensaje)
 	fmt.Println("-----------------------------")
 
-	teclado.IngresoNumeros()
+	// teclado.IngresoNumeros()
+	fmt.Println("-----------------------------")
+
+	iteraciones.Iterar()
 	fmt.Println("-----------------------------")
 }
