@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/harolpg17/godesde0/ejercicios"
+	"github.com/harolpg17/godesde0/files"
 	"github.com/harolpg17/godesde0/iteraciones"
 	"github.com/harolpg17/godesde0/variables"
 )
@@ -50,5 +51,16 @@ func main() {
 	iteraciones.Iterar()
 	fmt.Println("-----------------------------")
 
-	ejercicios.TablaDeMultiplicar()
+	// fmt.Println(ejercicios.TablaDeMultiplicar())
+
+	fmt.Println("-----------------------------")
+
+	// files.GrabaTabla()
+
+	fmt.Println("-----------------------------")
+
+	files.SumaTabla()
+	fmt.Println("-----------------------------")
+
+	files.LeoArchivo()
 }
