@@ -6,6 +6,7 @@ import (
 
 	"github.com/harolpg17/godesde0/ejercicios"
 	"github.com/harolpg17/godesde0/files"
+	"github.com/harolpg17/godesde0/funciones"
 	"github.com/harolpg17/godesde0/iteraciones"
 	"github.com/harolpg17/godesde0/variables"
 )
@@ -63,4 +64,12 @@ func main() {
 	fmt.Println("-----------------------------")
 
 	files.LeoArchivo()
+
+	fmt.Println("-----------------------------")
+
+	funciones.Calculos()
+
+	fmt.Println("-----------------------------")
+
+	funciones.LamarClosures()
 }
