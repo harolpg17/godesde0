@@ -72,4 +72,8 @@ func main() {
 	fmt.Println("-----------------------------")
 
 	funciones.LamarClosures()
+
+	fmt.Println("-----------------------------")
+
+	funciones.Exponencia(2)
 }
