@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
+	"github.com/harolpg17/godesde0/arreglos_slices"
 	"github.com/harolpg17/godesde0/ejercicios"
 	"github.com/harolpg17/godesde0/files"
 	"github.com/harolpg17/godesde0/funciones"
@@ -76,4 +77,12 @@ func main() {
 	fmt.Println("-----------------------------")
 
 	funciones.Exponencia(2)
+
+	fmt.Println("-----------------------------")
+
+	arreglos_slices.MuestroArreglos()
+
+	arreglos_slices.MuestroSlice()
+
+	arreglos_slices.Capacidad()
 }
