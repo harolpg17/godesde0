@@ -9,6 +9,7 @@ import (
 	"github.com/harolpg17/godesde0/files"
 	"github.com/harolpg17/godesde0/funciones"
 	"github.com/harolpg17/godesde0/iteraciones"
+	"github.com/harolpg17/godesde0/mapas"
 	"github.com/harolpg17/godesde0/variables"
 )
 
@@ -85,4 +86,7 @@ func main() {
 	arreglos_slices.MuestroSlice()
 
 	arreglos_slices.Capacidad()
+
+	fmt.Println("-----------------------------")
+	mapas.MostrarMapas()
 }
