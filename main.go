@@ -5,11 +5,13 @@ import (
 	"runtime"
 
 	"github.com/harolpg17/godesde0/arreglos_slices"
+	"github.com/harolpg17/godesde0/ejer_interfaces"
 	"github.com/harolpg17/godesde0/ejercicios"
 	"github.com/harolpg17/godesde0/files"
 	"github.com/harolpg17/godesde0/funciones"
 	"github.com/harolpg17/godesde0/iteraciones"
 	"github.com/harolpg17/godesde0/mapas"
+	"github.com/harolpg17/godesde0/modelos"
 	"github.com/harolpg17/godesde0/users"
 	"github.com/harolpg17/godesde0/variables"
 )
@@ -94,4 +96,12 @@ func main() {
 	fmt.Println("-----------------------------")
 
 	users.AltaUsuario()
+
+	fmt.Println("-----------------------------")
+
+	Pedro := new(modelos.Hombre)
+	ejer_interfaces.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	ejer_interfaces.HumanosRespirando(Maria)
 }
