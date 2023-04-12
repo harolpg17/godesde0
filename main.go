@@ -10,6 +10,7 @@ import (
 	"github.com/harolpg17/godesde0/funciones"
 	"github.com/harolpg17/godesde0/iteraciones"
 	"github.com/harolpg17/godesde0/mapas"
+	"github.com/harolpg17/godesde0/users"
 	"github.com/harolpg17/godesde0/variables"
 )
 
@@ -89,4 +90,8 @@ func main() {
 
 	fmt.Println("-----------------------------")
 	mapas.MostrarMapas()
+
+	fmt.Println("-----------------------------")
+
+	users.AltaUsuario()
 }
