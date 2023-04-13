@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"github.com/harolpg17/godesde0/arreglos_slices"
+	"github.com/harolpg17/godesde0/defer_panic"
 	"github.com/harolpg17/godesde0/ejer_interfaces"
 	"github.com/harolpg17/godesde0/ejercicios"
 	"github.com/harolpg17/godesde0/files"
@@ -104,4 +105,9 @@ func main() {
 
 	Maria := new(modelos.Mujer)
 	ejer_interfaces.HumanosRespirando(Maria)
+
+	fmt.Println("-----------------------------")
+
+	defer_panic.VemosDefer()
+	defer_panic.EjemploPanic()
 }
