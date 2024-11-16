@@ -2,112 +2,125 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 
-	"github.com/harolpg17/godesde0/arreglos_slices"
-	"github.com/harolpg17/godesde0/defer_panic"
-	"github.com/harolpg17/godesde0/ejer_interfaces"
-	"github.com/harolpg17/godesde0/ejercicios"
-	"github.com/harolpg17/godesde0/files"
-	"github.com/harolpg17/godesde0/funciones"
-	"github.com/harolpg17/godesde0/iteraciones"
-	"github.com/harolpg17/godesde0/mapas"
-	"github.com/harolpg17/godesde0/modelos"
-	"github.com/harolpg17/godesde0/users"
-	"github.com/harolpg17/godesde0/variables"
+	"github.com/harolpg17/godesde0/goroutines"
 )
 
+// "runtime"
+// "github.com/harolpg17/godesde0/arreglos_slices"
+// "github.com/harolpg17/godesde0/defer_panic"
+// "github.com/harolpg17/godesde0/ejer_interfaces"
+// "github.com/harolpg17/godesde0/ejercicios"
+// "github.com/harolpg17/godesde0/files"
+// "github.com/harolpg17/godesde0/funciones"
+// "github.com/harolpg17/godesde0/iteraciones"
+// "github.com/harolpg17/godesde0/mapas"
+// "github.com/harolpg17/godesde0/modelos"
+// "github.com/harolpg17/godesde0/users"
+// "github.com/harolpg17/godesde0/variables"
+// "github.com/harolpg17/godesde0/goroutines"
+
 func main() {
-	variables.MuestroEnteros()
-	fmt.Println("-----------------------------")
+	// variables.MuestroEnteros()
+	// fmt.Println("-----------------------------")
 
-	variables.RestoVariables()
-	fmt.Println("-----------------------------")
+	// variables.RestoVariables()
+	// fmt.Println("-----------------------------")
 
-	estado, texto := variables.ConviertoaTexto(145)
-	fmt.Println(estado)
-	fmt.Println(texto)
-	fmt.Println("-----------------------------")
+	// estado, texto := variables.ConviertoaTexto(145)
+	// fmt.Println(estado)
+	// fmt.Println(texto)
+	// fmt.Println("-----------------------------")
 
-	if os := runtime.GOOS; os == "linux" {
-		fmt.Println("Esto es Linux, es ", os)
-	} else {
-		fmt.Println("Esto no es Linux, es ", os)
-	}
-	fmt.Println("-----------------------------")
+	// if os := runtime.GOOS; os == "linux" {
+	// 	fmt.Println("Esto es Linux, es ", os)
+	// } else {
+	// 	fmt.Println("Esto no es Linux, es ", os)
+	// }
+	// fmt.Println("-----------------------------")
 
-	switch os := runtime.GOOS; os {
-	case "linux":
-		fmt.Println("Esto es Linux")
-	case "windows":
-		fmt.Println("Esto es Windows")
-	default:
-		fmt.Printf("%s 	\n", os)
-	}
+	// switch os := runtime.GOOS; os {
+	// case "linux":
+	// 	fmt.Println("Esto es Linux")
+	// case "windows":
+	// 	fmt.Println("Esto es Windows")
+	// default:
+	// 	fmt.Printf("%s 	\n", os)
+	// }
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	numero, mensaje := ejercicios.ConvertirTextoaEntero("60")
-	fmt.Println(numero)
-	fmt.Println(mensaje)
-	fmt.Println("-----------------------------")
+	// numero, mensaje := ejercicios.ConvertirTextoaEntero("60")
+	// fmt.Println(numero)
+	// fmt.Println(mensaje)
+	// fmt.Println("-----------------------------")
 
-	// teclado.IngresoNumeros()
-	fmt.Println("-----------------------------")
+	// // teclado.IngresoNumeros()
+	// fmt.Println("-----------------------------")
 
-	iteraciones.Iterar()
-	fmt.Println("-----------------------------")
+	// iteraciones.Iterar()
+	// fmt.Println("-----------------------------")
 
-	// fmt.Println(ejercicios.TablaDeMultiplicar())
+	// // fmt.Println(ejercicios.TablaDeMultiplicar())
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	// files.GrabaTabla()
+	// // files.GrabaTabla()
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	files.SumaTabla()
-	fmt.Println("-----------------------------")
+	// files.SumaTabla()
+	// fmt.Println("-----------------------------")
 
-	files.LeoArchivo()
+	// files.LeoArchivo()
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	funciones.Calculos()
+	// funciones.Calculos()
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	funciones.LamarClosures()
+	// funciones.LamarClosures()
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	funciones.Exponencia(2)
+	// funciones.Exponencia(2)
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	arreglos_slices.MuestroArreglos()
+	// arreglos_slices.MuestroArreglos()
 
-	arreglos_slices.MuestroSlice()
+	// arreglos_slices.MuestroSlice()
 
-	arreglos_slices.Capacidad()
+	// arreglos_slices.Capacidad()
 
-	fmt.Println("-----------------------------")
-	mapas.MostrarMapas()
+	// fmt.Println("-----------------------------")
+	// mapas.MostrarMapas()
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	users.AltaUsuario()
+	// users.AltaUsuario()
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	Pedro := new(modelos.Hombre)
-	ejer_interfaces.HumanosRespirando(Pedro)
+	// Pedro := new(modelos.Hombre)
+	// ejer_interfaces.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	ejer_interfaces.HumanosRespirando(Maria)
+	// Maria := new(modelos.Mujer)
+	// ejer_interfaces.HumanosRespirando(Maria)
 
-	fmt.Println("-----------------------------")
+	// fmt.Println("-----------------------------")
 
-	defer_panic.VemosDefer()
-	defer_panic.EjemploPanic()
+	// defer_panic.VemosDefer()
+	// defer_panic.EjemploPanic()
+
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Harol Perez", canal1)
+	defer func() {
+		<-canal1
+	}()
+	fmt.Println("Estoy aqui")
+	// <-canal1
+
+	// webserver.MiWebServer()
 }
