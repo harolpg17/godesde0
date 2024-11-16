@@ -1,24 +1,20 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/harolpg17/godesde0/goroutines"
+import ( // "runtime"
+	// "github.com/harolpg17/godesde0/arreglos_slices"
+	// "github.com/harolpg17/godesde0/defer_panic"
+	// "github.com/harolpg17/godesde0/ejer_interfaces"
+	// "github.com/harolpg17/godesde0/ejercicios"
+	// "github.com/harolpg17/godesde0/files"
+	// "github.com/harolpg17/godesde0/funciones"
+	// "github.com/harolpg17/godesde0/iteraciones"
+	// "github.com/harolpg17/godesde0/mapas"
+	// "github.com/harolpg17/godesde0/modelos"
+	// "github.com/harolpg17/godesde0/users"
+	// "github.com/harolpg17/godesde0/variables"
+	// "github.com/harolpg17/godesde0/goroutines"
+	"github.com/harolpg17/godesde0/webserver"
 )
-
-// "runtime"
-// "github.com/harolpg17/godesde0/arreglos_slices"
-// "github.com/harolpg17/godesde0/defer_panic"
-// "github.com/harolpg17/godesde0/ejer_interfaces"
-// "github.com/harolpg17/godesde0/ejercicios"
-// "github.com/harolpg17/godesde0/files"
-// "github.com/harolpg17/godesde0/funciones"
-// "github.com/harolpg17/godesde0/iteraciones"
-// "github.com/harolpg17/godesde0/mapas"
-// "github.com/harolpg17/godesde0/modelos"
-// "github.com/harolpg17/godesde0/users"
-// "github.com/harolpg17/godesde0/variables"
-// "github.com/harolpg17/godesde0/goroutines"
 
 func main() {
 	// variables.MuestroEnteros()
@@ -114,13 +110,13 @@ func main() {
 	// defer_panic.VemosDefer()
 	// defer_panic.EjemploPanic()
 
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLento("Harol Perez", canal1)
-	defer func() {
-		<-canal1
-	}()
-	fmt.Println("Estoy aqui")
-	// <-canal1
+	// canal1 := make(chan bool)
+	// go goroutines.MiNombreLento("Harol Perez", canal1)
+	// defer func() {
+	// 	<-canal1
+	// }()
+	// fmt.Println("Estoy aqui")
+	// // <-canal1
 
-	// webserver.MiWebServer()
+	webserver.MiWebServer()
 }
